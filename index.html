@@ -10,12 +10,19 @@
 </head>
 <body>
     <div class="container" id="app">
-        <div class="container-logo">
+        <div class="container-logo justify-center">
             <img src="img/logo.png" alt="logo">
         </div>
-        <div class="add-task">
+        <form class="add-task justify-center" @submit.prevent="newTask">
             <input type="text" placeholder="Inserisci testo to do">
             <button>Aggiungi</button>
+        </form>
+        <div class="tasks-container justify-center">
+            <ul>
+                <li v-for="todo in todoList">
+                    {{ todo.text }}
+                </li>
+            </ul>
         </div>
     </div>
     <script src="js/script.js"></script>
