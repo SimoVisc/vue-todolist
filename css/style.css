@@ -35,3 +35,6 @@ body{
     border: #29046d solid 1.5px;
     list-style: none;
 }
+.taskDone{
+    text-decoration: line-through;
+}

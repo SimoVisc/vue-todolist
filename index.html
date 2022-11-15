@@ -19,8 +19,8 @@
         </form>
         <div class="tasks-container justify-center">
             <ul>
-                <li v-for="todo in todoList">
-                    {{ todo.text }}
+                <li v-for="item in todoList" :class="{ taskDone: todoList.done === true}">
+                    {{ item.text, item.done }}
                 </li>
             </ul>
         </div>
