@@ -4,3 +4,28 @@
     margin: 0;
     padding: 0;
 }
+body{
+    max-width:1200px;
+}
+.container{
+    padding: 10% 0;
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+.container-logo img{
+    width:60%;
+}
+.add-task{
+    display: flex;
+    justify-content: center;
+}
+.add-task input {
+    padding: 0.625rem;
+    width: 40% ;
+}
+.add-task button{
+    width: 20%;
+}
