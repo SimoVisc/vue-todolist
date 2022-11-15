@@ -9,7 +9,7 @@ const { createApp } = Vue;
                text:"fare la spesa",
                done: true
             },{
-               text:"dare da mangiare al gatto",
+               text:"dare da mangiare al cane",
                done: true
             },{
                text:"pagare le bollette",
@@ -20,7 +20,7 @@ const { createApp } = Vue;
     }, 
     methods: {
         newTask(){
-          this.todoList.push(this.newTodo)
+          this.todoList.push(this.newTodo);
         }
     }
   }).mount('#app')
