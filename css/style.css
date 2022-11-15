@@ -28,7 +28,7 @@ body{
     border: #29046d solid 1.5px;
     color:  #29046d ;
 }
-.tasks-container ul{
+.tasks-list{
     background-color: #fff;
     padding: 20px;
     border-radius: 10px ;
