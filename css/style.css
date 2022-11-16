@@ -21,19 +21,30 @@ body{
 }
 .add-task{
     padding: 1.25rem;
+    
 }
 .add-task input, .add-task button {
     padding: 0.625rem;
     font-size: 25px;
     border: #29046d solid 1.5px;
     color:  #29046d ;
+    border-radius: 10px ;
+    margin:0 1.2%;
 }
 .tasks-list{
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px ;
     border: #29046d solid 1.5px;
     list-style: none;
+    width: 40%;
+    font-size: 25px;
+}
+.tasks-list li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #66e6e1 solid;
+    padding: 10px
 }
 .taskDone{
     text-decoration: line-through;

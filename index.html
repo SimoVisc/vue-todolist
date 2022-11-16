@@ -20,9 +20,9 @@
         </form>
         <div class="tasks-container justify-center">
             <ul class="tasks-list">
-                <li v-for="item in todoList" :class="{ taskDone : todoList.done === true}" >
-                    {{ item.text, item.done}}
-                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                <li v-for="(todo, index) in todoList" >
+                    <span :class="{taskDone: todo.done}">{{ todo.text }}</span>
+                    <i class="fa-sharp fa-solid fa-xmark" @click="removeTask(index)"></i>
                 </li>
             </ul>
         </div>
